@@ -4,10 +4,11 @@ const editBtn = document.querySelector(".edit");
 const taskBox = document.querySelectorAll(".task-box");
 const tasks = document.querySelectorAll(".task");
 
+
 let drag = null;
 
 let newTask = `
-<article class="task" draggable="true>
+<article class="task" draggable="true">
         <div class="text">Task</div>
         <div>
           <ion-icon class="edit" name="create"></ion-icon>
@@ -39,12 +40,18 @@ taskBox.forEach(function (del) {
   });
 });
 
+
 // Drag and drop
 
 tasks.forEach((task) => {
+
   task.addEventListener("dragstart", function () {
     console.log("dragstart");
     drag = task;
     task.style.backgroundColor = "red";
   });
+
+  task.addEventListener('dragend', function () {
+    console.log('end');
+  })
 });
