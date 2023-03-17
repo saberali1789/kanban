@@ -28,8 +28,10 @@ addBtn.forEach(function (btn) {
     } else {
       taskBox[2].innerHTML += newTask;
     }
+
   });
 });
+
 
 // Delete task
 taskBox.forEach(function (del) {
@@ -39,6 +41,7 @@ taskBox.forEach(function (del) {
     }
   });
 });
+
 
 
 // Drag and drop
