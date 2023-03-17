@@ -16,6 +16,7 @@ let newTask = `
       </article>
 `;
 
+// Add new tasks
 addBtn.forEach(function (btn) {
   btn.addEventListener("click", function (e) {
     const btnClass = e.currentTarget.classList;
@@ -29,7 +30,7 @@ addBtn.forEach(function (btn) {
   });
 });
 
-// Delete items
+// Delete task
 taskBox.forEach(function (del) {
   del.addEventListener("click", function (e) {
     if (e.target.classList.contains("delete")) {
